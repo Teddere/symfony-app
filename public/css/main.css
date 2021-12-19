@@ -1,0 +1,421 @@
+/* Variables */
+:root{
+    --white:#fff;
+    --black:#222;
+    --primary:#007bc4;
+    --grey:#888;
+    --btn:#2A65EF;
+}
+/* Importation */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Style global */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline:none;border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background-color: var(--primary);
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.section{
+    padding: 5rem 0 0 0;
+}
+/* Promotion */
+.promo{
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 0 0.2rem 0;
+    font-size: 1.5rem;
+}
+.container{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+/* Menu header */
+/* Bouton */
+#menu_bar{
+    color: var(--black);
+    border: .1rem solid var(--black);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+#btn_menu:hover{
+    color: var(--primary);
+    border: .1rem solid var(--primary);
+}
+/* Fin Bouton */
+/* Logo */
+/* Logo */
+.logo{
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 0rem 1.5rem;
+    color: var(--black);
+}
+.logo span{
+    font-size: 3rem;
+    color: var(--primary);
+}
+/* Fin de Logo */
+/* Contenu général */
+.headerMenu{
+    max-width: 125rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    height: 7rem;
+    padding: 2rem 9%;
+    background-color: var(--white);
+}
+.headerMenu .navbar a{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin: 0 .8rem;
+}
+.headerMenu .navbar a:hover{
+    color: var(--primary);
+}
+/* Fin Contenu général */
+/* Icone */
+.icons div{
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.icons div:not(:last-child){
+    margin-right: 0.5rem;
+}
+.icons div:hover{
+    color: var(--primary);
+}
+.icons div:last-child{
+    position: relative;
+    top:0.5rem;
+}
+.icons div span{
+    position: absolute;
+    /* top:-0.5rem; */
+    top: -4.5rem;
+    /* right: -1.2rem; */
+    right: -2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary);
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Fin Icone */
+/* fin Menu header */
+/* Mode de fonctionnement */
+.service{
+    border: 1px solid #ccc;
+    padding: 1rem 1rem 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.service:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.service:hover .icon{
+    transform:translateX(10%);
+}
+.service-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    /* grid-template-columns: (15rem,1fr); */
+    gap:5rem;
+}
+.service .icon{
+    background-color: var(--primary);
+    height: 80px;
+    width: 80px;
+    position: relative;
+    border-radius: 50%;
+}
+.service .icon i{
+    position: absolute;
+    font-size: 4rem;
+    top:50%;
+    left: 50%;
+    color: var(--white);
+    transform: translate(-50%,-50%);
+}
+.service h4{
+    margin-bottom: 0.3rem;
+}
+.service .text{
+    font-size: 1.5rem;
+    color: #777;
+}
+/* Fin Mode de fonctionnement */
+/* Contenair article titre */
+.newP .titre{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+.newP .titre h1{
+    font-weight: 400;
+}
+.newP .titre span{
+    color: var(--primary);
+}
+/* Fin Contenair article titre */
+/* Contenair article */
+.produit{
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+.produit:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.produit:hover img{
+    transform: scale(1.2);
+}
+.produit:hover .btn_prod{
+    display: block;
+}
+.produit img{
+    transition: all 500ms ease-in-out;
+}
+/* Article */
+.centre_produit{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.produit .img_cover{
+    overflow: hidden;
+    max-width: 80% ;
+}
+.img_cover img{
+    max-width: 100%;
+ }
+ .produit .rating{
+    color: var(--primary);
+}
+.produit .rating i:last-child{
+    color: var(--black);
+}
+.btn_prod{
+    /* display: none; */
+    margin: 2rem 0;
+    transition: .3s ease-in-out;
+}
+.btn_prod a{
+    border:1px solid var(--primary);
+    border-radius: 5px;
+    color: var(--black);
+    margin-top: 10rem;
+    padding: .2rem;
+    margin-left: .5rem;
+    transition: color .5s ease-in-out;
+    font-size: 1.1rem;
+}
+.btn_prod a:hover{
+    color: var(--white);
+    /* border:1px solid var(--black); */
+    background-color: var(--black);
+    
+}
+.btn_prod a:first-child:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+.btn_prod a:first-child:hover{
+    color: var(--white);
+    background: var(--primary);
+}
+@media only screen and (max-width: 567px){
+    .titre{
+        font-size: 2rem;
+    }
+}
+/* Fin Article */
+/* Fin Contenair article */
+/* catégories */
+.contenairItem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contenairItem .item{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.contenairItem .item i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: var(--primary);
+}
+.contenairItem .item h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.contenairItem .item p{
+    font-size: 1.5rem;
+    color: var(--grey);
+    padding: 1rem 0;
+}
+.contenairItem .item:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0,0, .1);
+}
+.contenairItem .item:hover i{
+    transform: scale(1.5);
+}
+
+/* Fin catégories */
+/* Page contacte */
+.titreContact{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.titreContact span{
+    font-size: 2rem;
+    background: rgba(11, 111,170, .2);
+    color: var(--primary);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+.titreContact .space{
+    opacity: 0;
+}
+/* Fin de page contact */
+/* Footer */
+.footer{
+    background-color: var(--black);
+    padding: 6rem 1rem 0;
+    line-height: 3rem;
+    margin-top: 5rem;
+}
+.footer span{
+    margin-right: 1rem;
+}
+.footer .footer_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: var(--white);
+}
+.footerItem h3{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.footerItem a:link,
+.footerItem a:visited{
+    display: block;
+    color: var(--grey);
+    font-size: 1.4rem;
+    transition: 0.6s;
+}
+.footerItem a:hover{
+    color: var(--primary);
+}
+.footerItem div{
+    font-size: 1.4rem;
+    color: var(--grey);
+}
+.copyright{
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 4rem 0 0;
+}
+.copyright a:hover{
+    color: var(--primary);
+}
+.logoFooter{
+    padding: 2rem 1.5rem 2rem 5rem;
+    font-size: 2rem;
+}
+.footerItem a{
+    color: #ccc;
+}
+
+/* Fin Footer */
+/* Media screen */
+@media screen and(max-width:1200px) {
+    html{
+        font-size: 55%;
+        overflow-x: hidden;
+        scroll-padding-top: 6rem;
+        scroll-behavior: smooth;
+    }
+}
+@media screen and (max-width:991px){
+    .headerMenu{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:766px){
+    #menu_bar{
+        display: inline;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;right: 0;left: 0;
+        background-color: var(--black);
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0) 
+    }
+    .headerMenu .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    .headerMenu .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        color: var(--white);
+        
+    }
+    .headerMenu .navbar a:hover{
+        background-color: #131413;
+    }
+}
+@media screen and (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contenairContact span{
+        font-size: 2.5rem;
+    } 
+}

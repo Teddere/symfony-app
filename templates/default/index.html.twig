@@ -1,0 +1,183 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+{% block body %}
+<!--<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style> -->
+    {% block header %}
+        {{ parent() }}
+    {% endblock %}
+    <!--Mode de fonctionnement -->
+    <section class="section services">
+        <div class="service-center container">
+            <div class="service">
+                <span class="icon"> <div><i class="fas fa-store-alt"></i></div></span>
+                <h4>Livraison gratuite</h4>
+                <span class="text">Commande supérieure 300€</span>
+            </div>
+            <div class="service">
+                <span class="icon"> <div><i class="fas fa-store-alt"></i></div></span>
+                <h4>Livraison gratuite</h4>
+                <span class="text">Commande supérieure 300€</span>
+            </div>
+            <div class="service">
+                <span class="icon"> <div><i class="fas fa-store-alt"></i></div></span>
+                <h4>Livraison gratuite</h4>
+                <span class="text">Commande supérieure 300€</span>
+            </div>
+            <div class="service">
+                <span class="icon"> <div><i class="fas fa-store-alt"></i></div></span>
+                <h4>Livraison gratuite</h4>
+                <span class="text">Commande supérieure 300€</span>
+            </div>
+        </div>
+       
+       
+        
+    </section>
+    <!--Fin Mode de fonctionnement -->
+    <!--Les produits nouvellement arrivés -->
+    <section class="section newP">
+        <div class="titre">
+            <h1><span>Nouvelles</span> arrivages</h1>
+        </div>
+        <div class="centre_produit container">
+            <div class="produit">
+                <div class="img_cover">
+                    <img src="#" alt="Article">
+                </div>
+                <p>Name product</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="btn_prod">
+                    <a class="btnAjoute" href="#">Ajouter</a>
+                    <a href="#">Détail</a>
+                </div>
+                <div class="prix">0 €</div>
+            </div>
+            <div class="produit">
+                <div class="img_cover">
+                    <img src="#" alt="Article">
+                </div>
+                <p>Name product</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="btn_prod">
+                    <a class="btnAjoute" href="#">Ajouter</a>
+                    <a href="#">Détail</a>
+                </div>
+                <div class="prix">0 €</div>
+        </div>
+        
+        </div>
+    </section>
+    <!--Fin Les produits nouvellement arrivés -->
+    <!--Mes catégories de produits -->
+    <section class="menuContenair container">
+        <div class="titreContact">
+            <span>c</span>
+            <span>a</span>
+            <span>t</span>
+            <span>é</span>
+            <span>g</span>
+            <span>o</span>
+            <span>r</span>
+            <span>i</span>
+            <span>e</span>
+            <span>s</span>
+        </div>
+        <div class="contenairItem">
+            <a href="#" class="item">
+                <i class="fas fa-laptop"></i>
+                <h3>Name catégorie</h3>
+                <p>Description</p>
+            </a>
+            <a href="#" class="item">
+                <i class="fas fa-laptop"></i>
+                <h3>Name catégorie</h3>
+                <p>Description</p>
+            </a>
+        </div>
+    </section>
+    <!-- Fin Mes catégories de produits -->
+    <!--Les produits du moment-->
+    <section class="produitMoment container">
+        <div class="titreContact">
+            <span>P</span>
+            <span>r</span>
+            <span>o</span>
+            <span>d</span>
+            <span>u</span>
+            <span>i</span>
+            <span>t</span>
+            <span>s</span>
+            <span class="space"></span>
+            <span>d</span>
+            <span>u</span>
+            <span class="space"></span>
+            <span>m</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+        </div>  
+    </section>
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="footer_container">
+                <div class="footerItem">
+                    <a href="/" class="logo logoFooter"><span>T</span>com</a>
+                </div>
+                <div class="footerItem">
+                    <h3>Navigation</h3>
+                    <a href="#">Catégories</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Polique de confidentialité</a>
+                </div>
+                <div class="footerItem">
+                    <h3>Conctatez-nous</h3>
+                    <div class="iconFooter">
+                        <sapn><i class="fas fa-map-marker-alt"></i></span>
+                        <a href="#">15 Rue du Louvre, 75001 Paris</a>
+                    </div>
+                    <div class="iconFooter">
+                        <span><i class="fas fa-envelope"></i></span>
+                        <a href="#">b.mabanza@elitech.education</a>
+                    </div>
+                    <div class="iconFooter">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="#">+33 6 09 30 93 87 </a>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="copyright">
+                Copyright&copy;2021/Tous droits réservés
+    </div>
+    </footer>
+    <!--Fin footer-->
+    <!--Fin Les produits du moment-->
+
+{# <div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/Users/MABANZA BORDAGNE TEO/Documents/Mes Cours/Projet_de_fin_d_anne/Site_Web/app/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/Users/MABANZA BORDAGNE TEO/Documents/Mes Cours/Projet_de_fin_d_anne/Site_Web/app/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
+    </ul>
+</div> #}
+{% endblock %}
