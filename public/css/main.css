@@ -61,6 +61,9 @@ html{
 /* Bouton */
 #menu_bar{
     display: none;
+}
+/* #menu_bar{
+    
     color: var(--black);
     border: .1rem solid var(--black);
     border-radius: .5rem;
@@ -72,7 +75,7 @@ html{
 #btn_menu:hover{
     color: var(--primary);
     border: .1rem solid var(--primary);
-}
+} */
 /* Fin Bouton */
 /* Logo */
 /* Logo */
@@ -98,6 +101,7 @@ html{
     padding: 2rem 9%;
     background-color: var(--white);
 }
+
 .headerMenu .navbar a{
     color: var(--black);
     font-size: 1.5rem;
@@ -105,7 +109,7 @@ html{
 }
 .headerMenu .navbar a:hover{
     color: var(--primary);
-}
+} 
 /* Fin Contenu général */
 /* Icone */
 .icons div{
@@ -429,9 +433,9 @@ html{
     }
 }
 @media screen and (max-width:766px){
-    #menu_bar{
+    /* #menu_bar{
         display: inline;
-    }
+    } */
     .navbar{
         position: absolute;
         top:100%;right: 0;left: 0;
@@ -509,9 +513,9 @@ html{
     }
 }
 @media screen and (max-width:766px){
-    #btn_menu{
+    /* #btn_menu{
         display:inline;
-    }
+    } */
     .navbar{
         position: absolute;
         top:20%;right: 0;left: 0;
